@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ===== Basic Setup ===== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Operating Studio | Book an Appointment</title>
+  <meta name="description"
+    content="Book your next haircut or beard design at The Operating Studio. View pricing and availability." />
+  <meta name="author" content="The Operating Studio" />
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+
+  <!-- ===== Fonts ===== -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- ===== Font Awesome ===== -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/booking/styles.css" />
+
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:title" content="Book at The Operating Studio" />
+  <meta property="og:description" content="Secure your next appointment — fades, beard design, or luxury shave." />
+  <meta property="og:image" content="../images/operating-studio-logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://theoperatingstudio.com/booking" />
+
+  <!-- ===== Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Book at The Operating Studio" />
+  <meta name="twitter:description" content="Secure your next appointment at The Operating Studio." />
+  <meta name="twitter:image" content="../images/operating-studio-logo.png" />
+
+  <meta name="theme-color" content="#000000" />
+
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a href="/" class="brand" aria-label="The Operating Studio Home">
+        <img src="/images/logo.png" alt="The Operating Studio logo" class="brand__logo" />
+        <span class="brand__name">The Operating Studio</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link is-active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li><a href="#reviews" class="nav__link">Reviews</a></li>
+          <li><a href="/booking/" class="nav__btn">Book Now</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="burger__bar"></span>
+        <span class="burger__bar"></span>
+        <span class="burger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+
+
+  <!-- ===== Pricing ===== -->
+  <section class="section pricing" id="pricing" aria-label="Pricing">
+    <div class="container">
+      <header class="section__head section__head--center">
+        <h1 class="section__title">Pricing</h1>
+        <p class="section__sub">Transparent, simple, studio-standard finishes. Pay in person (cash or card).</p>
+      </header>
+
+      <div class="pricing__grid" id="pricingGrid">
+        <!-- Skin Fade -->
+        <article class="p-card" data-service="skin-fade" data-url="">
+          <div class="p-head">
+            <img src="/images/skin-fade.png" alt="skin-fade-icon">
+            <h2 class="p-title">Skin Fade</h2>
+          </div>
+          <p class="p-desc">Clean gradient with tailored length on top for a fresh, long-lasting finish.</p>
+          <div class="p-meta">
+            <span class="p-time"><i class="fa-regular fa-clock"></i> ~45 min</span>
+            <span class="p-price">From £25</span>
+          </div>
+          <button class="btn btn--primary p-book">Book via Square</button>
+        </article>
+
+        <!-- Beard Design -->
+        <article class="p-card" data-service="beard-design" data-url="">
+          <div class="p-head">
+            <img src="/images/beard.png" alt="beard-icon">
+            <h2 class="p-title">Beard Design</h2>
+          </div>
+          <p class="p-desc">Precision shaping with clean lines and natural transitions to match your face.</p>
+          <div class="p-meta">
+            <span class="p-time"><i class="fa-regular fa-clock"></i> ~25 min</span>
+            <span class="p-price">From £15</span>
+          </div>
+          <button class="btn btn--primary p-book">Book via Square</button>
+        </article>
+
+        <!-- Luxury Shave -->
+        <article class="p-card" data-service="luxury-shave" data-url="">
+          <div class="p-head">
+            <img src="/images/beard-shave.png" alt="shave-icon">
+            <h2 class="p-title">Luxury Shave</h2>
+          </div>
+          <p class="p-desc">Hot towel prep, skin-safe shave, and post-care treatment for a smooth result.</p>
+          <div class="p-meta">
+            <span class="p-time"><i class="fa-regular fa-clock"></i> ~35 min</span>
+            <span class="p-price">From £20</span>
+          </div>
+          <button class="btn btn--primary p-book">Book via Square</button>
+        </article>
+
+        <!-- Shape Up -->
+        <article class="p-card" data-service="shape-up" data-url="">
+          <div class="p-head">
+            <img src="/images/shape-up.png" alt="shape-up-icon">
+            <h2 class="p-title">Shape Up</h2>
+          </div>
+          <p class="p-desc">Quick refresh between cuts — edges, neck, and outline made crisp again.</p>
+          <div class="p-meta">
+            <span class="p-time"><i class="fa-regular fa-clock"></i> ~15 min</span>
+            <span class="p-price">From £10</span>
+          </div>
+          <button class="btn btn--primary p-book">Book via Square</button>
+        </article>
+
+        <!-- Kids Cut -->
+        <article class="p-card" data-service="kids-cut" data-url="">
+          <div class="p-head">
+            <img src="/images/child.png" alt="kid-icon">
+            <h2 class="p-title">Kids Cut</h2>
+          </div>
+          <p class="p-desc">Patient, calm approach with styles that stay neat and easy to manage.</p>
+          <div class="p-meta">
+            <span class="p-time"><i class="fa-regular fa-clock"></i> ~30 min</span>
+            <span class="p-price">From £15</span>
+          </div>
+          <button class="btn btn--primary p-book">Book via Square</button>
+        </article>
+
+        <!-- Taper & Style -->
+        <article class="p-card" data-service="taper-style" data-url="">
+          <div class="p-head">
+            <img src="/images/taper-style.png" alt="taper-style-icon">
+            <h2 class="p-title">Taper & Style</h2>
+          </div>
+          <p class="p-desc">Low-maintenance taper with product finish tailored to your routine.</p>
+          <div class="p-meta">
+            <span class="p-time"><i class="fa-regular fa-clock"></i> ~30 min</span>
+            <span class="p-price">From £18</span>
+          </div>
+          <button class="btn btn--primary p-book">Book via Square</button>
+        </article>
+
+        <!-- Add-ons (optional smalls) -->
+        <article class="p-card p-card--addon" data-service="hot-towel" data-url="">
+          <div class="p-head">
+            <img src="/images/hot-towel.png" alt="hot-towel-icon">
+            <h2 class="p-title">Hot Towel Add-on</h2>
+          </div>
+          <p class="p-desc">Steam, soften, and prep the skin. Combine with shave or beard work.</p>
+          <div class="p-meta">
+            <span class="p-time"><i class="fa-regular fa-clock"></i> +10 min</span>
+            <span class="p-price">+ £5</span>
+          </div>
+          <button class="btn btn--primary p-book">Book via Square</button>
+        </article>
+      </div>
+
+      <!-- <p class="p-note"><i class="fa-regular fa-circle-info"></i> Prices shown are indicative for demo. You can set exact service prices in Square.</p> -->
+    </div>
+  </section>
+
+  <!-- ===== Booking (Square embed placeholder) ===== -->
+  <section class="section booking-embed" id="booking-embed" aria-label="Online booking">
+    <div class="container">
+      <header class="section__head section__head--center">
+        <h2 class="section__title">Book Online</h2>
+        <p class="section__sub">Live availability handled by Square Appointments.</p>
+      </header>
+
+      <div class="embed__frame" id="squareMount">
+        <!-- Paste your Square embed snippet here -->
+        <!-- Example: <iframe src="https://squareup.com/appointments/buyer/widget/…"></iframe> -->
+        <div class="embed__placeholder">
+          <i class="fa-regular fa-calendar"></i>
+          <p>Square booking widget</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <!-- Brand / tagline -->
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <img src="/images/logo.png" alt="The Operating Studio logo" />
+          <span>The Operating Studio</span>
+        </a>
+        <p class="footer__tag">Precision barbering in a modern studio setting.</p>
+        <ul class="footer__socials" aria-label="Social links">
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="mailto:bookings@operatingstudio.co.uk" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Quick links -->
+      <nav class="footer__nav" aria-label="Footer">
+        <h3 class="footer__title">Navigate</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact mini -->
+      <div class="footer__contact">
+        <h3 class="footer__title">Studio</h3>
+        <address>
+          12 Sample Street<br />
+          London, E1 2AB
+        </address>
+        <a href="tel:+441234567890" class="footer__link">+44 1234 567 890</a>
+        <a href="mailto:bookings@operatingstudio.co.uk" class="footer__link">bookings@operatingstudio.co.uk</a>
+        <a class="footer__map"
+          href="https://www.google.com/maps/search/?api=1&query=12%20Sample%20Street%20London%20E1%202AB"
+          target="_blank" rel="noopener">
+          <i class="fa-solid fa-location-dot"></i> Open in Google Maps
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <div class="container footer__bar__inner">
+        <small>© <span id="year"></span> The Operating Studio. All rights reserved.</small>
+        <div class="footer__legal">
+          <a href="#" aria-label="Privacy Policy">Privacy</a>
+          <span aria-hidden="true">·</span>
+          <a href="#" aria-label="Terms and Conditions">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="backtop" id="backtop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+
+  <script src="/script.js" defer></script>
+  <script src="/booking/script.js" defer></script>
+</body>
+
+</html>

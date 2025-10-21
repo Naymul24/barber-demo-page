@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ===== Basic Setup ===== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Operating Studio | Precision Barbering & Modern Style</title>
+  <meta name="description"
+    content="The Operating Studio — modern barbering studio offering precision fades, sharp styling, and premium grooming in a sleek minimal environment." />
+  <meta name="author" content="The Operating Studio" />
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+
+  <!-- ===== Fonts ===== -->
+  <!-- Primary Heading Font (modern sans alternative) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Secondary Font (Acumin Variable Concept alt) -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- ===== Font Awesome Icons ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-5xFQtwqYVsw4+NfD8p+Q1S6sr02Z2tR8dyB5shvCk0FJ4Oa0RdxKpHKSm1hIbD2iK3xF9cXHLTQYw5xkQcc2hA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ===== Stylesheet ===== -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ===== Open Graph (SEO) ===== -->
+  <meta property="og:title" content="The Operating Studio" />
+  <meta property="og:description" content="Precision fades and modern style at The Operating Studio." />
+  <meta property="og:image" content="images/operating-studio-logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://theoperatingstudio.com" />
+
+  <!-- ===== Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Operating Studio" />
+  <meta name="twitter:description" content="Precision barbering and modern style." />
+  <meta name="twitter:image" content="images/operating-studio-logo.png" />
+
+  <!-- ===== Color Scheme ===== -->
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a href="/" class="brand" aria-label="The Operating Studio Home">
+        <img src="/images/logo.png" alt="The Operating Studio logo" class="brand__logo" />
+        <span class="brand__name">The Operating Studio</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link is-active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li><a href="#reviews" class="nav__link">Reviews</a></li>
+          <li><a href="/booking/" class="nav__btn">Book Now</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="burger__bar"></span>
+        <span class="burger__bar"></span>
+        <span class="burger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero / Landing ===== -->
+  <section class="hero" id="home" role="region" aria-label="Landing section">
+    <div class="hero__media">
+      <!-- Desktop / large screen image -->
+      <img src="/images/landing.png" alt="Minimal black and white barber chair scene" class="hero__img" loading="eager"
+        fetchpriority="high" />
+      <!-- Optional overlay for subtle contrast -->
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="container hero__content">
+      <h1 class="hero__title">
+        Precision Cuts.<br />
+        Modern Style.
+      </h1>
+      <p class="hero__subtitle">
+        A studio approach to grooming — clean fades, sharp lines, and considered detail.
+      </p>
+
+      <div class="hero__actions">
+        <a href="/booking/" class="btn btn--primary">Book a Cut</a>
+        <a href="#services" class="btn btn--ghost">View Services</a>
+      </div>
+
+      <ul class="hero__badges" aria-label="Key highlights">
+        <li>Skin Fades</li>
+        <li>Beard Design</li>
+        <li>Luxury Shave</li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <!-- ===== About ===== -->
+  <section class="section about" id="about" aria-label="About The Operating Studio">
+    <div class="container about__grid">
+      <figure class="about__media">
+        <img src="images/about-studio.png" alt="Barber at work in a minimalist studio" class="about__img"
+          loading="lazy" />
+      </figure>
+
+      <div class="about__content">
+        <header class="section__head">
+          <h2 class="section__title">Studio-first Barbering</h2>
+          <p class="section__eyebrow">Precision • Care • Consistency</p>
+        </header>
+
+        <p class="about__lead">
+          I approach every cut like a session in a studio: clean lines, controlled detail, and finishes
+          that last. Specialising in skin fades, beard design, and low-maintenance modern styles.
+        </p>
+
+        <ul class="about__stats" aria-label="Highlights">
+          <li><strong>8+</strong><span>Years cutting</span></li>
+          <li><strong>1,200+</strong><span>Clients styled</span></li>
+          <li><strong>5★</strong><span>Client rating</span></li>
+        </ul>
+
+        <div class="about__actions">
+          <a href="/booking/" class="btn btn--primary">Book a Cut</a>
+          <a href="#gallery" class="btn btn--ghost">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ===== Services ===== -->
+<section class="section services" id="services" aria-label="Services">
+  <div class="container">
+    <header class="section__head section__head--center">
+      <h2 class="section__title">Services</h2>
+      <p class="section__sub">Focused, minimal list — see full pricing on the booking page.</p>
+    </header>
+
+    <div class="services__grid">
+      <!-- Card -->
+      <article class="service-card">
+        <img src="/images/skin-fade.png" alt="" class="service-card__icon" aria-hidden="true" />
+        <h3 class="service-card__title">Skin Fade</h3>
+        <p class="service-card__desc">
+          Clean gradient with tailored length on top for a fresh, long-lasting finish.
+        </p>
+        <p class="service-card__meta">~45 min</p>
+      </article>
+
+      <article class="service-card">
+        <img src="/images/beard.png" alt="" class="service-card__icon" aria-hidden="true" />
+        <h3 class="service-card__title">Beard Design</h3>
+        <p class="service-card__desc">
+          Precision shaping with clean lines and natural transitions to match your face shape.
+        </p>
+        <p class="service-card__meta">~25 min</p>
+      </article>
+
+      <article class="service-card">
+        <img src="/images/beard-shave.png" alt="" class="service-card__icon" aria-hidden="true" />
+        <h3 class="service-card__title">Luxury Shave</h3>
+        <p class="service-card__desc">
+          Hot towel prep, skin-safe shave, and post-care treatment for a smooth result.
+        </p>
+        <p class="service-card__meta">~35 min</p>
+      </article>
+
+      <article class="service-card">
+        <img src="/images/shape-up.png" alt="" class="service-card__icon" aria-hidden="true" />
+        <h3 class="service-card__title">Shape Up</h3>
+        <p class="service-card__desc">
+          Quick refresh between cuts — edges, neck, and outline made crisp again.
+        </p>
+        <p class="service-card__meta">~15 min</p>
+      </article>
+
+      <article class="service-card">
+        <img src="/images/child.png" alt="" class="service-card__icon" aria-hidden="true" />
+        <h3 class="service-card__title">Kids Cut</h3>
+        <p class="service-card__desc">
+          Patient, calm approach with styles that stay neat and easy to manage.
+        </p>
+        <p class="service-card__meta">~30 min</p>
+      </article>
+
+      <article class="service-card">
+        <img src="/images/taper-style.png" alt="" class="service-card__icon" aria-hidden="true" />
+        <h3 class="service-card__title">Taper & Style</h3>
+        <p class="service-card__desc">
+          Low-maintenance taper with product finish tailored to your routine.
+        </p>
+        <p class="service-card__meta">~30 min</p>
+      </article>
+    </div>
+
+    <div class="services__footer">
+      <a href="/booking/" class="btn btn--primary">See Pricing & Availability</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Gallery ===== -->
+<section class="section gallery" id="gallery" aria-label="Gallery">
+  <div class="container">
+    <header class="section__head section__head--center">
+      <h2 class="section__title">Gallery</h2>
+      <p class="section__sub">Selected work from The Operating Studio.</p>
+    </header>
+
+    <div class="gallery__grid" id="galleryGrid">
+      <!-- Item 1 -->
+      <figure class="gallery__item">
+        <img
+          src="/images/gallery1.png"
+          alt="Clean skin fade from The Operating Studio"
+          class="gallery__img"
+          loading="lazy"
+          data-index="0"
+        />
+      </figure>
+
+      <!-- Item 2 -->
+      <figure class="gallery__item">
+        <img
+          src="/images/gallery2.png"
+          alt="Beard design with sharp lines"
+          class="gallery__img"
+          loading="lazy"
+          data-index="1"
+        />
+      </figure>
+
+      <!-- Item 3 -->
+      <figure class="gallery__item">
+        <img
+          src="/images/gallery3.png"
+          alt="Tapered style with natural finish"
+          class="gallery__img"
+          loading="lazy"
+          data-index="2"
+        />
+      </figure>
+    </div>
+  </div>
+
+  <!-- Lightbox / Modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <div class="lightbox__backdrop" data-close="true"></div>
+
+    <button class="lightbox__btn lightbox__btn--close" id="lightboxClose" aria-label="Close gallery">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <button class="lightbox__btn lightbox__btn--prev" id="lightboxPrev" aria-label="Previous image">
+      <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+    <button class="lightbox__btn lightbox__btn--next" id="lightboxNext" aria-label="Next image">
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+    <figure class="lightbox__frame">
+      <img src="" alt="" class="lightbox__img" id="lightboxImg" />
+      <figcaption class="lightbox__cap" id="lightboxCap"></figcaption>
+    </figure>
+  </div>
+</section>
+
+
+
+<!-- ===== Reviews / Testimonials ===== -->
+<section class="section testimonials" id="reviews" aria-label="Client testimonials">
+  <div class="container">
+    <header class="section__head section__head--center">
+      <h2 class="section__title">What Clients Say</h2>
+      <p class="section__sub">Real results, consistent finishes.</p>
+    </header>
+
+    <div class="t-wrap">
+      <!-- Prev / Next OUTSIDE the card -->
+      <button class="t-arrow t-arrow--prev" id="tPrev" aria-label="Previous testimonial">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <div class="t-viewport" id="tViewport" aria-roledescription="carousel">
+        <div class="t-track" id="tTrack">
+          <!-- Slide 1 -->
+          <article class="t-slide" role="group" aria-roledescription="slide" aria-label="1 of 5">
+            <div class="t-card">
+              <div class="t-card__head">
+                <span class="t-avatar" aria-hidden="true">
+                  <i class="fa-solid fa-user"></i>
+                </span>
+                <div class="t-meta">
+                  <strong class="t-name">A. Rahman</strong>
+                  <span class="t-stars" aria-label="5 out of 5">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              <blockquote class="t-quote">
+                “Best skin fade I’ve had in London. Lines are super clean and the finish
+                actually lasts.”
+              </blockquote>
+            </div>
+          </article>
+
+          <!-- Slide 2 -->
+          <article class="t-slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+            <div class="t-card">
+              <div class="t-card__head">
+                <span class="t-avatar" aria-hidden="true"><i class="fa-solid fa-user"></i></span>
+                <div class="t-meta">
+                  <strong class="t-name">M. Patel</strong>
+                  <span class="t-stars" aria-label="5 out of 5">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              <blockquote class="t-quote">
+                “Booked a beard design ahead of a wedding — shape was perfect and matched my face.”
+              </blockquote>
+            </div>
+          </article>
+
+          <!-- Slide 3 -->
+          <article class="t-slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+            <div class="t-card">
+              <div class="t-card__head">
+                <span class="t-avatar" aria-hidden="true"><i class="fa-solid fa-user"></i></span>
+                <div class="t-meta">
+                  <strong class="t-name">J. Wilson</strong>
+                  <span class="t-stars" aria-label="5 out of 5">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              <blockquote class="t-quote">
+                “On-time, professional, and the taper grows out tidy. Zero fuss between cuts.”
+              </blockquote>
+            </div>
+          </article>
+
+          <!-- Slide 4 -->
+          <article class="t-slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+            <div class="t-card">
+              <div class="t-card__head">
+                <span class="t-avatar" aria-hidden="true"><i class="fa-solid fa-user"></i></span>
+                <div class="t-meta">
+                  <strong class="t-name">S. Ahmed</strong>
+                  <span class="t-stars" aria-label="5 out of 5">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              <blockquote class="t-quote">
+                “Shape up took 15 minutes and somehow it looks like a full cut. Detail is on point.”
+              </blockquote>
+            </div>
+          </article>
+
+          <!-- Slide 5 -->
+          <article class="t-slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+            <div class="t-card">
+              <div class="t-card__head">
+                <span class="t-avatar" aria-hidden="true"><i class="fa-solid fa-user"></i></span>
+                <div class="t-meta">
+                  <strong class="t-name">L. Carter</strong>
+                  <span class="t-stars" aria-label="5 out of 5">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              <blockquote class="t-quote">
+                “Kid’s cut was calm and patient. Style stayed neat for weeks — big win.”
+              </blockquote>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <button class="t-arrow t-arrow--next" id="tNext" aria-label="Next testimonial">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="t-dots" id="tDots" role="tablist" aria-label="Choose testimonial slide"></div>
+  </div>
+</section>
+
+
+
+<!-- ===== Booking CTA (no forms, just push to booking page) ===== -->
+<section class="section cta" id="booking">
+  <div class="container cta__box">
+    <header class="cta__head">
+      <h2 class="cta__title">Ready for a clean cut?</h2>
+      <p class="cta__sub">Check live availability and see the full price list.</p>
+    </header>
+
+    <div class="cta__actions">
+      <a href="/booking/" class="btn btn--light">See Pricing & Availability</a>
+      <a href="#contact" class="btn btn--outline">Contact</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="section contact" id="contact" aria-label="Contact">
+  <div class="container">
+    <header class="section__head section__head--center">
+      <h2 class="section__title">Contact</h2>
+      <p class="section__sub">Book, message, or find the studio.</p>
+    </header>
+
+    <div class="contact__grid">
+      <!-- Info -->
+      <article class="contact__card">
+        <h3 class="contact__title"><i class="fa-solid fa-address-card"></i> Details</h3>
+        <ul class="contact__list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <address>
+              The Operating Studio<br />
+              12 Sample Street, London, E1 2AB
+            </address>
+            <button class="contact__copy" data-copy="12 Sample Street, London, E1 2AB" aria-label="Copy address">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+441234567890">+44 1234 567 890</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a id="contactEmail" href="mailto:bookings@operatingstudio.co.uk">bookings@operatingstudio.co.uk</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a
+              class="contact__wa"
+              href="https://wa.me/441234567890?text=Hi%20The%20Operating%20Studio%2C%20I%27d%20like%20to%20book%20a%20cut."
+              target="_blank" rel="noopener"
+              >WhatsApp Message</a
+            >
+          </li>
+          <li class="contact__socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Hours -->
+      <article class="contact__card">
+        <h3 class="contact__title"><i class="fa-solid fa-clock"></i> Hours</h3>
+        <ul class="hours">
+          <li><span>Mon</span><time>10:00–18:00</time></li>
+          <li><span>Tue</span><time>10:00–18:00</time></li>
+          <li><span>Wed</span><time>10:00–18:00</time></li>
+          <li><span>Thu</span><time>10:00–20:00</time></li>
+          <li><span>Fri</span><time>10:00–20:00</time></li>
+          <li><span>Sat</span><time>09:00–17:00</time></li>
+          <li><span>Sun</span><time>Closed</time></li>
+        </ul>
+        <p class="hours__note"><i class="fa-solid fa-circle-info"></i> Late appointments on request.</p>
+      </article>
+
+      <!-- Quick message (mailto) -->
+      <article class="contact__card">
+        <h3 class="contact__title"><i class="fa-solid fa-paper-plane"></i> Quick message</h3>
+        <form class="contact__form" id="quickMessage" data-sendto="bookings@operatingstudio.co.uk">
+          <div class="f">
+            <label for="qm-name">Name</label>
+            <input id="qm-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="f">
+            <label for="qm-email">Email</label>
+            <input id="qm-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="f">
+            <label for="qm-msg">Message</label>
+            <textarea id="qm-msg" name="message" rows="4" placeholder="Hi, I’d like to book a skin fade next Thursday at 4pm." required></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Send</button>
+        </form>
+        <p class="form-help">This opens your email client — no data stored.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer__grid">
+    <!-- Brand / tagline -->
+    <div class="footer__brand">
+      <a href="#home" class="footer__logo">
+        <img src="/images/logo.png" alt="The Operating Studio logo" />
+        <span>The Operating Studio</span>
+      </a>
+      <p class="footer__tag">Precision barbering in a modern studio setting.</p>
+      <ul class="footer__socials" aria-label="Social links">
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+        <li><a href="mailto:bookings@operatingstudio.co.uk" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i></a></li>
+      </ul>
+    </div>
+
+    <!-- Quick links -->
+    <nav class="footer__nav" aria-label="Footer">
+      <h3 class="footer__title">Navigate</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="/booking/">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact mini -->
+    <div class="footer__contact">
+      <h3 class="footer__title">Studio</h3>
+      <address>
+        12 Sample Street<br />
+        London, E1 2AB
+      </address>
+      <a href="tel:+441234567890" class="footer__link">+44 1234 567 890</a>
+      <a href="mailto:bookings@operatingstudio.co.uk" class="footer__link">bookings@operatingstudio.co.uk</a>
+      <a class="footer__map"
+         href="https://www.google.com/maps/search/?api=1&query=12%20Sample%20Street%20London%20E1%202AB"
+         target="_blank" rel="noopener">
+        <i class="fa-solid fa-location-dot"></i> Open in Google Maps
+      </a>
+    </div>
+  </div>
+
+  <div class="footer__bar">
+    <div class="container footer__bar__inner">
+      <small>© <span id="year"></span> The Operating Studio. All rights reserved.</small>
+      <div class="footer__legal">
+        <a href="#" aria-label="Privacy Policy">Privacy</a>
+        <span aria-hidden="true">·</span>
+        <a href="#" aria-label="Terms and Conditions">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="backtop" id="backtop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+
+
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
